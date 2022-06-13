@@ -1,0 +1,7 @@
+set(Builder_SRCS src/Builder.cpp)
+
+add_library(Builder STATIC ${Builder_SRCS})
+
+target_link_libraries(Builder PUBLIC MarkovChain)
+
+target_include_directories(Builder PUBLIC include)
